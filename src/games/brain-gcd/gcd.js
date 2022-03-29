@@ -1,20 +1,30 @@
 import readlineSync from 'readline-sync';
 
-const isEven = (num) => num % 2 === 0;
-
 const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const brainEven = () => {
-  console.log('Welcome to the Brain Games!');
+const nod = (a, b) => {
+  let x = Math.abs(a);
+  let y = Math.abs(b);
+  while (y !== 0) {
+    const t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+};
+
+const brainGcd = () => {
+  console.log('Welcome to the Brains Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log('Find the greatest common divisor of given numbers.');
   let count = 0;
   while (count < 3) {
-    const number = getRandomInRange(0, 100);
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = isEven(number) ? 'yes' : 'no';
+    const firstNumber = getRandomInRange(0, 100);
+    const secondNumber = getRandomInRange(0, 100);
+    console.log(`${firstNumber} ${secondNumber}`);
+    const userAnswer = readlineSync.question('You answer: ');
+    const correctAnswer = String(nod(firstNumber, secondNumber));
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
       count = 3;
@@ -28,4 +38,4 @@ const brainEven = () => {
   }
 };
 
-export default brainEven;
+export default brainGcd;

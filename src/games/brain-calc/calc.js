@@ -28,7 +28,7 @@ const brainCalc = () => {
     const secondNumber = getRandomInRange(0, 100);
     const char = chars[Math.floor(Math.random() * chars.length)];
     console.log(`Question: ${firstNumber} ${char} ${secondNumber}`);
-    const userAnswer = (readlineSync.question('Your answer: '));
+    const userAnswer = readlineSync.question('Your answer: ');
     const correctAnswer = String(calc(firstNumber, secondNumber, char));
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
