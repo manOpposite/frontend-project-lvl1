@@ -24,7 +24,7 @@ const brainEven = () => {
       console.log('Correct!');
       count += 1;
       if (count === 3) {
-        console.log(`Congratulation, ${userName}!`);
+        console.log(`Congratulations, ${userName}!`);
       }
     }
   }
