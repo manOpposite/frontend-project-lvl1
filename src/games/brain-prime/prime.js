@@ -2,29 +2,27 @@ import readlineSync from 'readline-sync';
 
 const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const nod = (a, b) => {
-  let x = Math.abs(a);
-  let y = Math.abs(b);
-  while (y !== 0) {
-    const t = y;
-    y = x % y;
-    x = t;
+const isPrimeNumber = (num) => {
+  let count = 0;
+  for (let i = 2; i < Math.floor(num / 2); i += 1) {
+    if (num % i === 0) {
+      count += 1;
+    }
   }
-  return x;
+  return count === 0 ? 'yes' : 'no';
 };
 
-const brainGcd = () => {
+const brainPrime = () => {
   console.log('Welcome to the Brains Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let count = 0;
   while (count < 3) {
-    const firstNumber = getRandomInRange(0, 100);
-    const secondNumber = getRandomInRange(0, 100);
-    console.log(`Question: ${firstNumber} ${secondNumber}`);
+    const number = getRandomInRange(0, 100);
+    console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('You answer: ');
-    const correctAnswer = String(nod(firstNumber, secondNumber));
+    const correctAnswer = isPrimeNumber(number);
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
       count = 3;
@@ -38,4 +36,4 @@ const brainGcd = () => {
   }
 };
 
-export default brainGcd;
+export default brainPrime;

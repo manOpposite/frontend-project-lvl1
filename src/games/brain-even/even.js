@@ -1,6 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const isEven = (num) => num % 2 === 0;
+const isEven = (num) => {
+  const result = num % 2 === 0 ? 'yes' : 'no';
+  return result;
+};
 
 const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -14,7 +17,7 @@ const brainEven = () => {
     const number = getRandomInRange(0, 100);
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = isEven(number) ? 'yes' : 'no';
+    const correctAnswer = isEven(number);
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
       count = 3;

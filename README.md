@@ -1,13 +1,17 @@
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/manOpposite/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/manOpposite/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![example workflow](https://github.com/manOpposite/frontend-project-lvl1/actions/workflows/action.yml/badge.svg)](https://github.com/manOpposite/frontend-project-lvl1/actions)
 
-<a href="https://asciinema.org/a/gj88gaG5oMx8bb9ElxLiixn2J" target="_blank"><img src="https://asciinema.org/a/gj88gaG5oMx8bb9ElxLiixn2J.svg" /></a>
+# BRAIN GAMES
 
-<a href="https://asciinema.org/a/8l5cXIxx7XVZx834G6sM6lZqs" target="_blank"><img src="https://asciinema.org/a/8l5cXIxx7XVZx834G6sM6lZqs.svg" /></a>
+## Brain-even   https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i
 
-<a href="https://asciinema.org/a/A1M80P0Zhp6wXhhaw3TNBAs6o" target="_blank"><img src="https://asciinema.org/a/A1M80P0Zhp6wXhhaw3TNBAs6o.svg" /></a>
+## Brain-calc   https://asciinema.org/a/cLOlH3SzvEAQ2GJ7J46YU0U8o
 
-<a href="https://asciinema.org/a/pF0rYjfFokWoV5TTXFMcGd2cq" target="_blank"><img src="https://asciinema.org/a/pF0rYjfFokWoV5TTXFMcGd2cq.svg" /></a>
+## Brain-gcd    https://asciinema.org/a/yOlEjnE22ZQaFXPzkICHj7WcF
 
+## Brain-progression   https://asciinema.org/a/3u1iuUdRdW0FjgRgcuKuGBRpH
+
+## Brain-prime  https://asciinema.org/a/yqkwaPtml3Ed2XYu7s4KWYNv3
