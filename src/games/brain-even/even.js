@@ -1,11 +1,10 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../../utils/getRandomInRange.js';
 
 const isEven = (num) => {
   const result = num % 2 === 0 ? 'yes' : 'no';
   return result;
 };
-
-const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const brainEven = () => {
   console.log('Welcome to the Brain Games!');

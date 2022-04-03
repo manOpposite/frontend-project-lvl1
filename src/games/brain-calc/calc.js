@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../../utils/getRandomInRange.js';
 
 const calc = (firstNumber, secondNumber, char) => {
   let result;
@@ -13,8 +14,6 @@ const calc = (firstNumber, secondNumber, char) => {
   }
   return result;
 };
-
-const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const brainCalc = () => {
   console.log('Welcome to the Brain Games!');
