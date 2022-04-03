@@ -6,12 +6,12 @@
 
 # BRAIN GAMES
 
-## Brain-even   https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i
+## Brain-even   ### https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i
 
-## Brain-calc   https://asciinema.org/a/cLOlH3SzvEAQ2GJ7J46YU0U8o
+## Brain-calc   ### https://asciinema.org/a/cLOlH3SzvEAQ2GJ7J46YU0U8o
 
-## Brain-gcd    https://asciinema.org/a/yOlEjnE22ZQaFXPzkICHj7WcF
+## Brain-gcd    ### https://asciinema.org/a/yOlEjnE22ZQaFXPzkICHj7WcF
 
-## Brain-progression   https://asciinema.org/a/3u1iuUdRdW0FjgRgcuKuGBRpH
+## Brain-progression   ### https://asciinema.org/a/3u1iuUdRdW0FjgRgcuKuGBRpH
 
-## Brain-prime  https://asciinema.org/a/yqkwaPtml3Ed2XYu7s4KWYNv3
+## Brain-prime  ### https://asciinema.org/a/yqkwaPtml3Ed2XYu7s4KWYNv3
