@@ -18,7 +18,7 @@ const startGame = (description, getData) => {
       return;
     }
   }
-  console.log(`Congratulation, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startGame;
