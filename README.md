@@ -10,6 +10,7 @@
 #### Brain Games - это сборник мини игр.
 * Brain-even - проверка числа на чётность.
 [![asciicast](https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i.svg)](https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i)
+<script id="asciicast-PAko8ZtTcexxXfDRxpRqxi31i" src="https://asciinema.org/a/PAko8ZtTcexxXfDRxpRqxi31i.js" async></script>
 * Brain-calc - вычисление математичиского выражения.
 [![asciicast](https://asciinema.org/a/cLOlH3SzvEAQ2GJ7J46YU0U8o.svg)](https://asciinema.org/a/cLOlH3SzvEAQ2GJ7J46YU0U8o)
 * Brain- gcd - нахождение общего наибольшего делителя.
