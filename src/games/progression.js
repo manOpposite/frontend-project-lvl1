@@ -5,8 +5,8 @@ const description = 'What number is missing in the progression?';
 
 const getProgression = (firstNumber, step, length) => {
   const arr = [];
-  for (let count = 0; count < length; count += 1) {
-    const number = firstNumber + count * step;
+  for (let i = 0; i < length; i += 1) {
+    const number = firstNumber + i * step;
     arr.push(number);
   }
   return arr;
