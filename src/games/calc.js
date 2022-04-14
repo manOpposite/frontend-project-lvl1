@@ -1,28 +1,23 @@
-import getRandomInRange from '../../utils/getRandomInRange.js';
-import startGame from '../../index.js';
+import getRandomInRange from '../utils/getRandomInRange.js';
+import startGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const calc = (firstNumber, secondNumber, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = firstNumber + secondNumber;
-      break;
+      return firstNumber + secondNumber;
     case '-':
-      result = firstNumber - secondNumber;
-      break;
+      return firstNumber - secondNumber;
     case '*':
-      result = firstNumber * secondNumber;
-      break;
+      return firstNumber * secondNumber;
     default:
       throw new Error('unsupported operator');
   }
-  return result;
 };
 
-const getData = () => {
+const generateRound = () => {
   const firstNumber = getRandomInRange(0, 100);
   const secondNumber = getRandomInRange(0, 100);
   const randomOperator = operators[getRandomInRange(0, operators.length - 1)];
@@ -31,6 +26,6 @@ const getData = () => {
   return [question, correctAnswer];
 };
 
-const startCalcGame = () => startGame(description, getData);
+const startCalcGame = () => startGame(description, generateRound);
 
 export default startCalcGame;
